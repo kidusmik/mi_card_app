@@ -16,32 +16,79 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
-            // mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+              const CircleAvatar(
+                backgroundColor: Colors.yellow,
+                backgroundImage: NetworkImage(
+                    'https://i.ibb.co/YhMzhpK/FB-IMG-1622499660403.jpg'),
+                radius: 50,
+              ),
+              const Text(
+                'Kidus M. Worku',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 45,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Estonia',
+                ),
+              ),
+              Text(
+                'MOBILE APP DEVELOPER',
+                style: TextStyle(
+                  color: Colors.teal.shade100,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Source Sans Pro',
+                  fontSize: 20,
+                  letterSpacing: 2.5,
+                ),
+              ),
               Container(
-                width: 100,
-                height: 100,
                 color: Colors.white,
-                child: const Text('Container 1'),
-              ),
-              const SizedBox(
-                height: 50,
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                padding: EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    const Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Text(
+                      '+012 34 567 8901',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20,
+                      ),
+                    ),
+                  ],
+                ),
               ),
               Container(
-                width: 100,
-                height: 100,
-                color: Colors.blue,
-                child: const Text('Container 2'),
-              ),
-              const SizedBox(
-                height: 50,
-              ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.red,
-                child: const Text('Container 3'),
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                padding: EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    const Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Text(
+                      'kidusmik@gmail.com',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
