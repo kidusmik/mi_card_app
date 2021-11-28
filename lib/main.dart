@@ -15,31 +15,31 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Column(
+          child: Row(
             // mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
+                height: double.infinity,
                 width: 100,
-                height: 100,
                 color: Colors.white,
                 child: const Text('Container 1'),
               ),
-              const SizedBox(
-                height: 50,
-              ),
+              // const SizedBox(
+              //   height: 50,
+              // ),
               Container(
+                alignment: Alignment.center,
                 width: 100,
                 height: 100,
-                color: Colors.blue,
-                child: const Text('Container 2'),
+                color: Colors.yellow,
               ),
-              const SizedBox(
-                height: 50,
-              ),
+              // const SizedBox(
+              //   height: 50,
+              // ),
               Container(
+                height: double.infinity,
                 width: 100,
-                height: 100,
                 color: Colors.red,
                 child: const Text('Container 3'),
               ),
